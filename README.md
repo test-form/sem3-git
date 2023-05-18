@@ -1,1 +1,1 @@
-# synergy_python_basic
+# Synergy_python_basic tasks
