@@ -5,25 +5,25 @@
 # ● count_1000() -выводит сколько целых тысяч осталось в кассе
 # ● take_away(X) -забрать X из кассы, либо выкинуть ошибку, что не достаточно денег
 
-# class Cashbox:
-#
-# 	def __init__(self, nums=5000):
-# 		self.nums = nums
-# 	def top_up(self, X):
-# 		return f"Итог пополнения: {self.nums + X}"
-#
-# 	def count_1000(self):
-# 		return f"Целых тысяч: {self.nums / 1000}"
-#
-# 	def take_away(self, X):
-# 		if self.nums < X:
-# 			return f"Недостаточно денег"
-# 		return f"Останется: {self.nums - X}"
-#
-# h1 = Cashbox(1200)
-# print(h1.top_up(3000))
-# print(h1.count_1000())
-# print(h1.take_away(1000))
+class Cashbox:
+
+	def __init__(self, nums=5000):
+		self.nums = nums
+	def top_up(self, X):
+		return f"Итог пополнения: {self.nums + X}"
+
+	def count_1000(self):
+		return f"Целых тысяч: {self.nums / 1000}"
+
+	def take_away(self, X):
+		if self.nums < X:
+			return f"Недостаточно денег"
+		return f"Останется: {self.nums - X}"
+
+h1 = Cashbox(1200)
+print(h1.top_up(3000))
+print(h1.count_1000())
+print(h1.take_away(1000))
 
 
 # Задание N2. Создайте класс Черепашка, который хранит позиции x и y черепашки, а также s -количество
